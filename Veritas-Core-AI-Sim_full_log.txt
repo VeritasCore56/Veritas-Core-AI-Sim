@@ -1,0 +1,1364 @@
+2025-08-12 00:56:21,473 - Output_Redirect - INFO - All subsequent console output and logs will be saved to: /content/drive/MyDrive/veritas_core_full_log.txt
+2025-08-12 00:56:21,477 - AI_Core - INFO - Initialized AI Core Parameters: {'BASE_FACTOR_A': 2.0, 'BASE_FACTOR_B': 6.0, 'BASE_FACTOR_C': 8.0, 'BASE_FACTOR_D': 3.0}
+2025-08-12 00:56:21,478 - AI_Core - INFO - Initialized shared_data_register with learning goal: {'current_x8_term': None, 'current_x6_plus_2_term': None, 'last_shared_output_value': None, 'last_shared_output_source': None, 'validation_flag': True, 'errors_detected': [], 'validation_context_k_index': 1, 'goal_for_x6_plus_2_first_term': 10.0, 'x6_plus_2_recent_terms_history': []}
+2025-08-12 00:56:21,480 - AI_Core - INFO - Initialized AI Value Hierarchy: {'CORE_DERIVATIONS_DISHARMONY_WEIGHT': 1000.0, 'DECIMAL_SERIES_DISHARMONY_WEIGHT': 100.0, 'X6_PLUS_2_FIRST_TERM_DISHARMONY_WEIGHT': 10.0, 'GENERIC_25K_DISHARMONY_WEIGHT': 5.0}
+2025-08-12 00:56:21,481 - AI_Core - INFO - Initialized Veritas Core Formulas (symbolic): {'x6+2_sequence': ('odd_num', '*', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_A')}
+2025-08-12 00:56:21,487 - AI_Core - INFO - 
+--- Simulating Parameter Adjustment for Learning ---
+2025-08-12 00:56:21,487 - AI_Core - INFO - Learning Goal: Make the first term of x6+2 sequence = 10.0
+2025-08-12 00:56:21,488 - AI_Core - INFO - Initial AI Core Parameters (PERTURBED for Value Conflict Demo): {'BASE_FACTOR_A': 4.0, 'BASE_FACTOR_B': 6.0, 'BASE_FACTOR_C': 8.0, 'BASE_FACTOR_D': 3.0}
+2025-08-12 00:56:21,488 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,488 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,488 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,488 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,489 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,489 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,490 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,490 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,490 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,490 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,491 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,491 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,491 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,492 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,492 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,492 - AI_Core - INFO - Initial Overall Loss (PERTURBED State): 12692000.0
+2025-08-12 00:56:21,493 - AI_Core - INFO - 
+--- Running System with ADJUSTED (Perturbed) Parameters ---
+2025-08-12 00:56:21,493 - AI_Core - INFO - 
+--- Iteration 1 ---
+2025-08-12 00:56:21,493 - x8_Module - INFO - Detected Shared Output: 8.0
+2025-08-12 00:56:21,494 - Coordinator_Module - INFO - Detected Global Shared Output: 8.0 from x8_progression
+2025-08-12 00:56:21,494 - Coordinator_Module - INFO - Action: Initializing core systems (8 detected).
+2025-08-12 00:56:21,494 - Validator_Module - INFO - Performing validation check (initial_8_detection)...
+2025-08-12 00:56:21,494 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,494 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,494 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,495 - Validator_Module - INFO - Validation PASSED: 25k Target for k=1. Calculated 25.
+2025-08-12 00:56:21,495 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,495 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,495 - Validator_Module - INFO - Validation PASSED: Decimal Series for k=1. Calculated 5/3.
+2025-08-12 00:56:21,495 - Validator_Module - INFO - Validation PASSED for current checks.
+2025-08-12 00:56:21,496 - Coordinator_Module - INFO - No new shared output detected in this cycle.
+2025-08-12 00:56:21,496 - Validator_Module - INFO - Performing validation check (iteration_end)...
+2025-08-12 00:56:21,496 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,497 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,497 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,497 - Validator_Module - INFO - Validation PASSED: 25k Target for k=1. Calculated 25.
+2025-08-12 00:56:21,497 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,498 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,498 - Validator_Module - INFO - Validation PASSED: Decimal Series for k=1. Calculated 5/3.
+2025-08-12 00:56:21,498 - Validator_Module - INFO - Validation PASSED for current checks.
+2025-08-12 00:56:21,499 - AI_Core - INFO - 
+--- Iteration 2 ---
+2025-08-12 00:56:21,499 - Coordinator_Module - INFO - No new shared output detected in this cycle.
+2025-08-12 00:56:21,499 - Coordinator_Module - INFO - No new shared output detected in this cycle.
+2025-08-12 00:56:21,499 - Validator_Module - INFO - Performing validation check (iteration_end)...
+2025-08-12 00:56:21,500 - AI_Core - DEBUG - calculate_25k_target(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,500 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 2 + 2 = 50
+2025-08-12 00:56:21,500 - AI_Core - DEBUG -   25k: Final result 50
+2025-08-12 00:56:21,500 - Validator_Module - INFO - Validation PASSED: 25k Target for k=2. Calculated 50.
+2025-08-12 00:56:21,500 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,501 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,501 - Validator_Module - INFO - Validation PASSED: Decimal Series for k=2. Calculated -2/3.
+2025-08-12 00:56:21,501 - Validator_Module - INFO - Validation PASSED for current checks.
+2025-08-12 00:56:21,501 - AI_Core - INFO - 
+--- Iteration 3 ---
+2025-08-12 00:56:21,502 - Coordinator_Module - INFO - No new shared output detected in this cycle.
+2025-08-12 00:56:21,502 - Coordinator_Module - INFO - No new shared output detected in this cycle.
+2025-08-12 00:56:21,502 - Validator_Module - INFO - Performing validation check (iteration_end)...
+2025-08-12 00:56:21,503 - AI_Core - DEBUG - calculate_25k_target(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,503 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 3 + 3 = 75
+2025-08-12 00:56:21,503 - AI_Core - DEBUG -   25k: Final result 75
+2025-08-12 00:56:21,503 - Validator_Module - INFO - Validation PASSED: 25k Target for k=3. Calculated 75.
+2025-08-12 00:56:21,504 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,504 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,504 - Validator_Module - INFO - Validation PASSED: Decimal Series for k=3. Calculated -19/9.
+2025-08-12 00:56:21,504 - Validator_Module - INFO - Validation PASSED for current checks.
+2025-08-12 00:56:21,504 - AI_Core - INFO - 
+--- Iteration 4 ---
+2025-08-12 00:56:21,505 - x8_Module - INFO - Detected Shared Output: 56.0
+2025-08-12 00:56:21,505 - Coordinator_Module - INFO - Detected Global Shared Output: 56.0 from x8_progression
+2025-08-12 00:56:21,505 - Coordinator_Module - INFO - Action: Verifying module alignment (56 detected).
+2025-08-12 00:56:21,505 - Validator_Module - INFO - Performing validation check (56_alignment)...
+2025-08-12 00:56:21,505 - AI_Core - DEBUG - calculate_25k_target(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,506 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 4 + 4 = 100
+2025-08-12 00:56:21,506 - AI_Core - DEBUG -   25k: Final result 100
+2025-08-12 00:56:21,506 - Validator_Module - INFO - Validation PASSED: 25k Target for k=4. Calculated 100.
+2025-08-12 00:56:21,506 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,507 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,507 - Validator_Module - INFO - Validation PASSED: Decimal Series for k=4. Calculated -10/3.
+2025-08-12 00:56:21,507 - Validator_Module - INFO - Validation PASSED for current checks.
+2025-08-12 00:56:21,507 - Coordinator_Module - INFO - No new shared output detected in this cycle.
+2025-08-12 00:56:21,507 - Validator_Module - INFO - Performing validation check (iteration_end)...
+2025-08-12 00:56:21,508 - AI_Core - DEBUG - calculate_25k_target(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,508 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 4 + 4 = 100
+2025-08-12 00:56:21,508 - AI_Core - DEBUG -   25k: Final result 100
+2025-08-12 00:56:21,508 - Validator_Module - INFO - Validation PASSED: 25k Target for k=4. Calculated 100.
+2025-08-12 00:56:21,509 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,509 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,509 - Validator_Module - INFO - Validation PASSED: Decimal Series for k=4. Calculated -10/3.
+2025-08-12 00:56:21,509 - Validator_Module - INFO - Validation PASSED for current checks.
+2025-08-12 00:56:21,510 - AI_Core - INFO - 
+--- Iteration 5 ---
+2025-08-12 00:56:21,510 - Coordinator_Module - INFO - No new shared output detected in this cycle.
+2025-08-12 00:56:21,510 - Coordinator_Module - INFO - No new shared output detected in this cycle.
+2025-08-12 00:56:21,510 - Validator_Module - INFO - Performing validation check (iteration_end)...
+2025-08-12 00:56:21,511 - AI_Core - DEBUG - calculate_25k_target(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,511 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 5 + 5 = 125
+2025-08-12 00:56:21,511 - AI_Core - DEBUG -   25k: Final result 125
+2025-08-12 00:56:21,511 - Validator_Module - INFO - Validation PASSED: 25k Target for k=5. Calculated 125.
+2025-08-12 00:56:21,511 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,512 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,512 - Validator_Module - INFO - Validation PASSED: Decimal Series for k=5. Calculated -67/15.
+2025-08-12 00:56:21,512 - Validator_Module - INFO - Validation PASSED for current checks.
+2025-08-12 00:56:21,512 - AI_Core - INFO - 
+--- Iteration 6 ---
+2025-08-12 00:56:21,512 - Coordinator_Module - INFO - No new shared output detected in this cycle.
+2025-08-12 00:56:21,512 - Coordinator_Module - INFO - No new shared output detected in this cycle.
+2025-08-12 00:56:21,513 - Validator_Module - INFO - Performing validation check (iteration_end)...
+2025-08-12 00:56:21,513 - AI_Core - DEBUG - calculate_25k_target(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,513 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 6 + 6 = 150
+2025-08-12 00:56:21,513 - AI_Core - DEBUG -   25k: Final result 150
+2025-08-12 00:56:21,513 - Validator_Module - INFO - Validation PASSED: 25k Target for k=6. Calculated 150.
+2025-08-12 00:56:21,514 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,514 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,514 - Validator_Module - INFO - Validation PASSED: Decimal Series for k=6. Calculated -50/9.
+2025-08-12 00:56:21,514 - Validator_Module - INFO - Validation PASSED for current checks.
+2025-08-12 00:56:21,515 - AI_Core - INFO - 
+--- Iteration 7 ---
+2025-08-12 00:56:21,515 - x8_Module - INFO - Detected Shared Output: 104.0
+2025-08-12 00:56:21,515 - Coordinator_Module - INFO - Detected Global Shared Output: 104.0 from x8_progression
+2025-08-12 00:56:21,516 - Coordinator_Module - INFO - Action: Advancing to next operational phase (104 detected).
+2025-08-12 00:56:21,516 - Validator_Module - INFO - Performing validation check (phase_advance_104)...
+2025-08-12 00:56:21,516 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,516 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,517 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,517 - Validator_Module - INFO - Validation PASSED: 25k Target for k=1. Calculated 25.
+2025-08-12 00:56:21,517 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,518 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,518 - Validator_Module - INFO - Validation PASSED: Decimal Series for k=1. Calculated 5/3.
+2025-08-12 00:56:21,518 - Validator_Module - INFO - Validation PASSED for current checks.
+2025-08-12 00:56:21,518 - DerivedRels_Module - INFO - Checking core derivations...
+2025-08-12 00:56:21,519 - DerivedRels_Module - ERROR - Derived Rel. Error: 4.0 * 6.0 = 24.0, expected 12.0
+2025-08-12 00:56:21,519 - DerivedRels_Module - ERROR - Derived Rel. Error: 4.0 + 6.0 = 10.0, expected 8.0
+2025-08-12 00:56:21,519 - DerivedRels_Module - ERROR - Derived Rel. Error: 56 * 4.0 - 8.0 = 216.0, expected 104.0
+2025-08-12 00:56:21,519 - DerivedRels_Module - ERROR - Derived Relationships Validation FAILED! Overall system validation_flag set to False.
+2025-08-12 00:56:21,519 - Coordinator_Module - INFO - No new shared output detected in this cycle.
+2025-08-12 00:56:21,520 - Validator_Module - INFO - Performing validation check (iteration_end)...
+2025-08-12 00:56:21,520 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,520 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,520 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,521 - Validator_Module - INFO - Validation PASSED: 25k Target for k=1. Calculated 25.
+2025-08-12 00:56:21,521 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,521 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,521 - Validator_Module - INFO - Validation PASSED: Decimal Series for k=1. Calculated 5/3.
+2025-08-12 00:56:21,522 - Validator_Module - INFO - Validation PASSED for current checks.
+2025-08-12 00:56:21,522 - AI_Core - INFO - 
+--- Iteration 8 ---
+2025-08-12 00:56:21,522 - Coordinator_Module - INFO - No new shared output detected in this cycle.
+2025-08-12 00:56:21,522 - Coordinator_Module - INFO - No new shared output detected in this cycle.
+2025-08-12 00:56:21,522 - Validator_Module - INFO - Performing validation check (iteration_end)...
+2025-08-12 00:56:21,523 - AI_Core - DEBUG - calculate_25k_target(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,523 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 2 + 2 = 50
+2025-08-12 00:56:21,523 - AI_Core - DEBUG -   25k: Final result 50
+2025-08-12 00:56:21,523 - Validator_Module - INFO - Validation PASSED: 25k Target for k=2. Calculated 50.
+2025-08-12 00:56:21,523 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,524 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,524 - Validator_Module - INFO - Validation PASSED: Decimal Series for k=2. Calculated -2/3.
+2025-08-12 00:56:21,524 - Validator_Module - INFO - Validation PASSED for current checks.
+2025-08-12 00:56:21,524 - AI_Core - INFO - 
+--- Iteration 9 ---
+2025-08-12 00:56:21,525 - Coordinator_Module - INFO - No new shared output detected in this cycle.
+2025-08-12 00:56:21,525 - Coordinator_Module - INFO - No new shared output detected in this cycle.
+2025-08-12 00:56:21,525 - Validator_Module - INFO - Performing validation check (iteration_end)...
+2025-08-12 00:56:21,525 - AI_Core - DEBUG - calculate_25k_target(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,526 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 3 + 3 = 75
+2025-08-12 00:56:21,526 - AI_Core - DEBUG -   25k: Final result 75
+2025-08-12 00:56:21,526 - Validator_Module - INFO - Validation PASSED: 25k Target for k=3. Calculated 75.
+2025-08-12 00:56:21,526 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,526 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,527 - Validator_Module - INFO - Validation PASSED: Decimal Series for k=3. Calculated -19/9.
+2025-08-12 00:56:21,527 - Validator_Module - INFO - Validation PASSED for current checks.
+2025-08-12 00:56:21,528 - AI_Core - INFO - 
+--- Post-Main Loop Self-Correction & Invention Attempt ---
+2025-08-12 00:56:21,528 - Validator_Module - INFO - Performing validation check (final_aggregate_check)...
+2025-08-12 00:56:21,528 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,529 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,529 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,529 - Validator_Module - INFO - Validation PASSED: 25k Target for k=1. Calculated 25.
+2025-08-12 00:56:21,530 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,530 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,531 - Validator_Module - INFO - Validation PASSED: Decimal Series for k=1. Calculated 5/3.
+2025-08-12 00:56:21,531 - Validator_Module - INFO - Validation PASSED for current checks.
+2025-08-12 00:56:21,532 - DerivedRels_Module - INFO - Checking core derivations...
+2025-08-12 00:56:21,532 - DerivedRels_Module - ERROR - Derived Rel. Error: 4.0 * 6.0 = 24.0, expected 12.0
+2025-08-12 00:56:21,532 - DerivedRels_Module - ERROR - Derived Rel. Error: 4.0 + 6.0 = 10.0, expected 8.0
+2025-08-12 00:56:21,532 - DerivedRels_Module - ERROR - Derived Rel. Error: 56 * 4.0 - 8.0 = 216.0, expected 104.0
+2025-08-12 00:56:21,533 - DerivedRels_Module - ERROR - Derived Relationships Validation FAILED! Overall system validation_flag set to False.
+2025-08-12 00:56:21,533 - AI_Core - ERROR - [AI_Core] Critical validation failure(s) detected in main run. Initiating self-correction!
+2025-08-12 00:56:21,533 - AI_Core - INFO - 
+[Self-Correction Module] Initiating sophisticated multi-parameter self-correction process...
+2025-08-12 00:56:21,534 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,534 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,534 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,534 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,534 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,535 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,535 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,535 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,535 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,535 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,536 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,536 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,536 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,537 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,537 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,537 - AI_Core - INFO -   [Self-Correction] Attempt 1: A=4.0, B=6.0, C=8.0, D=3.0 | Overall Loss: 12692000.0
+2025-08-12 00:56:21,537 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,538 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,538 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,538 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,538 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,538 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,539 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,539 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,539 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,539 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,539 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,539 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,540 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,540 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,540 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,540 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,540 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,541 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,541 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,541 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,541 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,542 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,542 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,542 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,542 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,543 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,543 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,543 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,543 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,543 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,544 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,544 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,544 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,544 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,544 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,544 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,545 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,545 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,545 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,545 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,546 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,546 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,546 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,546 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,547 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,547 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,547 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,547 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,548 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,548 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,548 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,548 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,549 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,549 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,549 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,549 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,550 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,550 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,550 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,551 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,551 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=9.0, D=3.0
+2025-08-12 00:56:21,551 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 9 / (3 * 1) - 1 = 2
+2025-08-12 00:56:21,551 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=9.0, D=3.0
+2025-08-12 00:56:21,552 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 9 / (3 * 2) - 2 = -1/2
+2025-08-12 00:56:21,552 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=9.0, D=3.0
+2025-08-12 00:56:21,552 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 9 / (3 * 3) - 3 = -2
+2025-08-12 00:56:21,552 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=9.0, D=3.0
+2025-08-12 00:56:21,553 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 9 / (3 * 4) - 4 = -13/4
+2025-08-12 00:56:21,553 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=9.0, D=3.0
+2025-08-12 00:56:21,553 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 9 / (3 * 5) - 5 = -22/5
+2025-08-12 00:56:21,554 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=9.0, D=3.0
+2025-08-12 00:56:21,554 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 9 / (3 * 6) - 6 = -11/2
+2025-08-12 00:56:21,554 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=9.0, D=3.0
+2025-08-12 00:56:21,554 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 9 * 3 * 1 + 1 = 28
+2025-08-12 00:56:21,555 - AI_Core - DEBUG -   25k: Final result 28
+2025-08-12 00:56:21,555 - AI_Core - WARNING - Harmony Score: 25k Goal Mismatch! Calculated: 28, Expected: 25. Applying high penalty.
+2025-08-12 00:56:21,555 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=7.0, D=3.0
+2025-08-12 00:56:21,555 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 7 / (3 * 1) - 1 = 4/3
+2025-08-12 00:56:21,556 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=7.0, D=3.0
+2025-08-12 00:56:21,556 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 7 / (3 * 2) - 2 = -5/6
+2025-08-12 00:56:21,556 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=7.0, D=3.0
+2025-08-12 00:56:21,556 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 7 / (3 * 3) - 3 = -20/9
+2025-08-12 00:56:21,556 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=7.0, D=3.0
+2025-08-12 00:56:21,556 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 7 / (3 * 4) - 4 = -41/12
+2025-08-12 00:56:21,557 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=7.0, D=3.0
+2025-08-12 00:56:21,557 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 7 / (3 * 5) - 5 = -68/15
+2025-08-12 00:56:21,557 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=7.0, D=3.0
+2025-08-12 00:56:21,557 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 7 / (3 * 6) - 6 = -101/18
+2025-08-12 00:56:21,557 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=7.0, D=3.0
+2025-08-12 00:56:21,558 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 7 * 3 * 1 + 1 = 22
+2025-08-12 00:56:21,558 - AI_Core - DEBUG -   25k: Final result 22
+2025-08-12 00:56:21,558 - AI_Core - WARNING - Harmony Score: 25k Goal Mismatch! Calculated: 22, Expected: 25. Applying high penalty.
+2025-08-12 00:56:21,558 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=4.0
+2025-08-12 00:56:21,558 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 1) - 1 = 1
+2025-08-12 00:56:21,558 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=4.0
+2025-08-12 00:56:21,559 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 2) - 2 = -1
+2025-08-12 00:56:21,559 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=4.0
+2025-08-12 00:56:21,559 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 3) - 3 = -7/3
+2025-08-12 00:56:21,559 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=4.0
+2025-08-12 00:56:21,559 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 4) - 4 = -7/2
+2025-08-12 00:56:21,560 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=4.0
+2025-08-12 00:56:21,560 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 5) - 5 = -23/5
+2025-08-12 00:56:21,560 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=4.0
+2025-08-12 00:56:21,560 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 6) - 6 = -17/3
+2025-08-12 00:56:21,560 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=4.0
+2025-08-12 00:56:21,561 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 4 * 1 + 1 = 33
+2025-08-12 00:56:21,561 - AI_Core - DEBUG -   25k: Final result 33
+2025-08-12 00:56:21,561 - AI_Core - WARNING - Harmony Score: 25k Goal Mismatch! Calculated: 33, Expected: 25. Applying high penalty.
+2025-08-12 00:56:21,561 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=2.0
+2025-08-12 00:56:21,562 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 1) - 1 = 3
+2025-08-12 00:56:21,562 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=2.0
+2025-08-12 00:56:21,562 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 2) - 2 = 0
+2025-08-12 00:56:21,562 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=2.0
+2025-08-12 00:56:21,562 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 3) - 3 = -5/3
+2025-08-12 00:56:21,562 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=2.0
+2025-08-12 00:56:21,563 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 4) - 4 = -3
+2025-08-12 00:56:21,563 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=2.0
+2025-08-12 00:56:21,563 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 5) - 5 = -21/5
+2025-08-12 00:56:21,563 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=2.0
+2025-08-12 00:56:21,564 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 6) - 6 = -16/3
+2025-08-12 00:56:21,564 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=2.0
+2025-08-12 00:56:21,564 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 2 * 1 + 1 = 17
+2025-08-12 00:56:21,564 - AI_Core - DEBUG -   25k: Final result 17
+2025-08-12 00:56:21,565 - AI_Core - WARNING - Harmony Score: 25k Goal Mismatch! Calculated: 17, Expected: 25. Applying high penalty.
+2025-08-12 00:56:21,565 - AI_Core - INFO -     Tested Nudges: BASE_FACTOR_A+: 28557010.000, BASE_FACTOR_A-: 3173010.000, BASE_FACTOR_B+: 12809010.000, BASE_FACTOR_B-: 12609010.000, BASE_FACTOR_C+: 12474016.571, BASE_FACTOR_C-: 12922016.571, BASE_FACTOR_D+: 12697066.284, BASE_FACTOR_D-: 12697265.136
+2025-08-12 00:56:21,565 - AI_Core - INFO -     Adjusting BASE_FACTOR_A: -1.0 to 3.0
+2025-08-12 00:56:21,565 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,565 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,566 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,566 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,566 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,566 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,566 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,567 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,567 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,567 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,567 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,567 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,568 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,568 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,568 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,568 - AI_Core - INFO -   [Self-Correction] Attempt 2: A=3.0, B=6.0, C=8.0, D=3.0 | Overall Loss: 3173010.0
+2025-08-12 00:56:21,568 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,568 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,569 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,569 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,569 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,570 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,570 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,570 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,570 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,571 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,571 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,571 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,574 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,575 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,576 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,576 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,576 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,576 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,577 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,577 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,577 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,577 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,577 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,578 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,578 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,578 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,578 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,578 - x6+2_Module - INFO - Detected Shared Output: 8.0
+2025-08-12 00:56:21,579 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,579 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,579 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,580 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,580 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,580 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,581 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,581 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,581 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,581 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,581 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,582 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,585 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,586 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,586 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,586 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,586 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,586 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,587 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,587 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,587 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,587 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,587 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,588 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,588 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,588 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,588 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,589 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,589 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,589 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,589 - x6+2_Module - INFO - Detected Shared Output: 8.0
+2025-08-12 00:56:21,589 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,590 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,590 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,590 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=9.0, D=3.0
+2025-08-12 00:56:21,590 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 9 / (3 * 1) - 1 = 2
+2025-08-12 00:56:21,591 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=9.0, D=3.0
+2025-08-12 00:56:21,591 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 9 / (3 * 2) - 2 = -1/2
+2025-08-12 00:56:21,591 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=9.0, D=3.0
+2025-08-12 00:56:21,592 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 9 / (3 * 3) - 3 = -2
+2025-08-12 00:56:21,592 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=9.0, D=3.0
+2025-08-12 00:56:21,592 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 9 / (3 * 4) - 4 = -13/4
+2025-08-12 00:56:21,593 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=9.0, D=3.0
+2025-08-12 00:56:21,593 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 9 / (3 * 5) - 5 = -22/5
+2025-08-12 00:56:21,593 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=9.0, D=3.0
+2025-08-12 00:56:21,594 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 9 / (3 * 6) - 6 = -11/2
+2025-08-12 00:56:21,594 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=9.0, D=3.0
+2025-08-12 00:56:21,594 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 9 * 3 * 1 + 1 = 28
+2025-08-12 00:56:21,594 - AI_Core - DEBUG -   25k: Final result 28
+2025-08-12 00:56:21,595 - AI_Core - WARNING - Harmony Score: 25k Goal Mismatch! Calculated: 28, Expected: 25. Applying high penalty.
+2025-08-12 00:56:21,595 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=7.0, D=3.0
+2025-08-12 00:56:21,595 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 7 / (3 * 1) - 1 = 4/3
+2025-08-12 00:56:21,595 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=7.0, D=3.0
+2025-08-12 00:56:21,596 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 7 / (3 * 2) - 2 = -5/6
+2025-08-12 00:56:21,596 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=7.0, D=3.0
+2025-08-12 00:56:21,596 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 7 / (3 * 3) - 3 = -20/9
+2025-08-12 00:56:21,597 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=7.0, D=3.0
+2025-08-12 00:56:21,597 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 7 / (3 * 4) - 4 = -41/12
+2025-08-12 00:56:21,597 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=7.0, D=3.0
+2025-08-12 00:56:21,597 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 7 / (3 * 5) - 5 = -68/15
+2025-08-12 00:56:21,597 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=7.0, D=3.0
+2025-08-12 00:56:21,598 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 7 / (3 * 6) - 6 = -101/18
+2025-08-12 00:56:21,598 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=7.0, D=3.0
+2025-08-12 00:56:21,598 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 7 * 3 * 1 + 1 = 22
+2025-08-12 00:56:21,599 - AI_Core - DEBUG -   25k: Final result 22
+2025-08-12 00:56:21,599 - AI_Core - WARNING - Harmony Score: 25k Goal Mismatch! Calculated: 22, Expected: 25. Applying high penalty.
+2025-08-12 00:56:21,599 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=4.0
+2025-08-12 00:56:21,599 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 1) - 1 = 1
+2025-08-12 00:56:21,600 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=4.0
+2025-08-12 00:56:21,600 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 2) - 2 = -1
+2025-08-12 00:56:21,600 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=4.0
+2025-08-12 00:56:21,600 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 3) - 3 = -7/3
+2025-08-12 00:56:21,601 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=4.0
+2025-08-12 00:56:21,601 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 4) - 4 = -7/2
+2025-08-12 00:56:21,601 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=4.0
+2025-08-12 00:56:21,601 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 5) - 5 = -23/5
+2025-08-12 00:56:21,602 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=4.0
+2025-08-12 00:56:21,602 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 6) - 6 = -17/3
+2025-08-12 00:56:21,602 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=4.0
+2025-08-12 00:56:21,602 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 4 * 1 + 1 = 33
+2025-08-12 00:56:21,602 - AI_Core - DEBUG -   25k: Final result 33
+2025-08-12 00:56:21,603 - AI_Core - WARNING - Harmony Score: 25k Goal Mismatch! Calculated: 33, Expected: 25. Applying high penalty.
+2025-08-12 00:56:21,603 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=2.0
+2025-08-12 00:56:21,603 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 1) - 1 = 3
+2025-08-12 00:56:21,603 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=2.0
+2025-08-12 00:56:21,603 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 2) - 2 = 0
+2025-08-12 00:56:21,604 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=2.0
+2025-08-12 00:56:21,604 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 3) - 3 = -5/3
+2025-08-12 00:56:21,604 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=2.0
+2025-08-12 00:56:21,604 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 4) - 4 = -3
+2025-08-12 00:56:21,605 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=2.0
+2025-08-12 00:56:21,608 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 5) - 5 = -21/5
+2025-08-12 00:56:21,609 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=2.0
+2025-08-12 00:56:21,609 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 6) - 6 = -16/3
+2025-08-12 00:56:21,609 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=2.0
+2025-08-12 00:56:21,610 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 2 * 1 + 1 = 17
+2025-08-12 00:56:21,610 - AI_Core - DEBUG -   25k: Final result 17
+2025-08-12 00:56:21,610 - AI_Core - WARNING - Harmony Score: 25k Goal Mismatch! Calculated: 17, Expected: 25. Applying high penalty.
+2025-08-12 00:56:21,610 - AI_Core - INFO -     Tested Nudges: BASE_FACTOR_A+: 12692000.000, BASE_FACTOR_A-: 40.000, BASE_FACTOR_B+: 3221000.000, BASE_FACTOR_B-: 3145040.000, BASE_FACTOR_C+: 3067026.571, BASE_FACTOR_C-: 3291026.571, BASE_FACTOR_D+: 3178076.284, BASE_FACTOR_D-: 3178275.136
+2025-08-12 00:56:21,610 - AI_Core - INFO -     Adjusting BASE_FACTOR_A: -1.0 to 2.0
+2025-08-12 00:56:21,611 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,611 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,611 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,611 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,612 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,612 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,612 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,612 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,612 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,613 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,613 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,613 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,613 - x6+2_Module - INFO - Detected Shared Output: 8.0
+2025-08-12 00:56:21,613 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,614 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,614 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,614 - AI_Core - INFO -   [Self-Correction] Attempt 3: A=2.0, B=6.0, C=8.0, D=3.0 | Overall Loss: 40.0
+2025-08-12 00:56:21,614 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,614 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,614 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,615 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,615 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,615 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,615 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,615 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,616 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,616 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,616 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,616 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,616 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,617 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,617 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,617 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,617 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,617 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,617 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,618 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,618 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,618 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,619 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,619 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,619 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,619 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,619 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,620 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,620 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,620 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,620 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,620 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,621 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,621 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,621 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,621 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,621 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,622 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,622 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,622 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,622 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,623 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,623 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,623 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,624 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,624 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,624 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,624 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,624 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,625 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,625 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,625 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,625 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,625 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,626 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,626 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,626 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,626 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,626 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,627 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,627 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=9.0, D=3.0
+2025-08-12 00:56:21,627 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 9 / (3 * 1) - 1 = 2
+2025-08-12 00:56:21,627 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=9.0, D=3.0
+2025-08-12 00:56:21,627 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 9 / (3 * 2) - 2 = -1/2
+2025-08-12 00:56:21,628 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=9.0, D=3.0
+2025-08-12 00:56:21,628 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 9 / (3 * 3) - 3 = -2
+2025-08-12 00:56:21,628 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=9.0, D=3.0
+2025-08-12 00:56:21,629 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 9 / (3 * 4) - 4 = -13/4
+2025-08-12 00:56:21,629 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=9.0, D=3.0
+2025-08-12 00:56:21,629 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 9 / (3 * 5) - 5 = -22/5
+2025-08-12 00:56:21,629 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=9.0, D=3.0
+2025-08-12 00:56:21,630 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 9 / (3 * 6) - 6 = -11/2
+2025-08-12 00:56:21,630 - x6+2_Module - INFO - Detected Shared Output: 8.0
+2025-08-12 00:56:21,630 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=9.0, D=3.0
+2025-08-12 00:56:21,630 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 9 * 3 * 1 + 1 = 28
+2025-08-12 00:56:21,630 - AI_Core - DEBUG -   25k: Final result 28
+2025-08-12 00:56:21,631 - AI_Core - WARNING - Harmony Score: 25k Goal Mismatch! Calculated: 28, Expected: 25. Applying high penalty.
+2025-08-12 00:56:21,631 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=7.0, D=3.0
+2025-08-12 00:56:21,631 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 7 / (3 * 1) - 1 = 4/3
+2025-08-12 00:56:21,631 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=7.0, D=3.0
+2025-08-12 00:56:21,631 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 7 / (3 * 2) - 2 = -5/6
+2025-08-12 00:56:21,632 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=7.0, D=3.0
+2025-08-12 00:56:21,632 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 7 / (3 * 3) - 3 = -20/9
+2025-08-12 00:56:21,632 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=7.0, D=3.0
+2025-08-12 00:56:21,632 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 7 / (3 * 4) - 4 = -41/12
+2025-08-12 00:56:21,632 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=7.0, D=3.0
+2025-08-12 00:56:21,632 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 7 / (3 * 5) - 5 = -68/15
+2025-08-12 00:56:21,633 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=7.0, D=3.0
+2025-08-12 00:56:21,633 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 7 / (3 * 6) - 6 = -101/18
+2025-08-12 00:56:21,633 - x6+2_Module - INFO - Detected Shared Output: 8.0
+2025-08-12 00:56:21,633 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=7.0, D=3.0
+2025-08-12 00:56:21,634 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 7 * 3 * 1 + 1 = 22
+2025-08-12 00:56:21,634 - AI_Core - DEBUG -   25k: Final result 22
+2025-08-12 00:56:21,634 - AI_Core - WARNING - Harmony Score: 25k Goal Mismatch! Calculated: 22, Expected: 25. Applying high penalty.
+2025-08-12 00:56:21,634 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=4.0
+2025-08-12 00:56:21,634 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 1) - 1 = 1
+2025-08-12 00:56:21,634 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=4.0
+2025-08-12 00:56:21,635 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 2) - 2 = -1
+2025-08-12 00:56:21,635 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=4.0
+2025-08-12 00:56:21,635 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 3) - 3 = -7/3
+2025-08-12 00:56:21,635 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=4.0
+2025-08-12 00:56:21,635 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 4) - 4 = -7/2
+2025-08-12 00:56:21,636 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=4.0
+2025-08-12 00:56:21,636 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 5) - 5 = -23/5
+2025-08-12 00:56:21,636 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=4.0
+2025-08-12 00:56:21,636 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 6) - 6 = -17/3
+2025-08-12 00:56:21,636 - x6+2_Module - INFO - Detected Shared Output: 8.0
+2025-08-12 00:56:21,637 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=4.0
+2025-08-12 00:56:21,637 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 4 * 1 + 1 = 33
+2025-08-12 00:56:21,637 - AI_Core - DEBUG -   25k: Final result 33
+2025-08-12 00:56:21,638 - AI_Core - WARNING - Harmony Score: 25k Goal Mismatch! Calculated: 33, Expected: 25. Applying high penalty.
+2025-08-12 00:56:21,638 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=2.0
+2025-08-12 00:56:21,638 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 1) - 1 = 3
+2025-08-12 00:56:21,638 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=2.0
+2025-08-12 00:56:21,639 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 2) - 2 = 0
+2025-08-12 00:56:21,639 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=2.0
+2025-08-12 00:56:21,639 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 3) - 3 = -5/3
+2025-08-12 00:56:21,639 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=2.0
+2025-08-12 00:56:21,639 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 4) - 4 = -3
+2025-08-12 00:56:21,640 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=2.0
+2025-08-12 00:56:21,640 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 5) - 5 = -21/5
+2025-08-12 00:56:21,640 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=2.0
+2025-08-12 00:56:21,640 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 6) - 6 = -16/3
+2025-08-12 00:56:21,640 - x6+2_Module - INFO - Detected Shared Output: 8.0
+2025-08-12 00:56:21,641 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=2.0
+2025-08-12 00:56:21,641 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 2 * 1 + 1 = 17
+2025-08-12 00:56:21,641 - AI_Core - DEBUG -   25k: Final result 17
+2025-08-12 00:56:21,642 - AI_Core - WARNING - Harmony Score: 25k Goal Mismatch! Calculated: 17, Expected: 25. Applying high penalty.
+2025-08-12 00:56:21,642 - AI_Core - INFO -     Tested Nudges: BASE_FACTOR_A+: 3173010.000, BASE_FACTOR_A-: 3173090.000, BASE_FACTOR_B+: 5010.000, BASE_FACTOR_B-: 5090.000, BASE_FACTOR_C+: 6056.571, BASE_FACTOR_C-: 6056.571, BASE_FACTOR_D+: 5106.284, BASE_FACTOR_D-: 5305.136
+2025-08-12 00:56:21,643 - AI_Core - WARNING - [Self-Correction Module] Stuck! No immediate improvement found with current learning_rate. Overall Loss: 40.0
+2025-08-12 00:56:21,643 - AI_Core - CRITICAL - [AI_Core] Self-correction FAILED! System remains inconsistent.
+2025-08-12 00:56:21,643 - AI_Core - INFO - 
+[Inventor Module] Parameter adjustment failed. Initiating broader Rule Invention...
+2025-08-12 00:56:21,644 - MetaRule_Module - INFO - 
+[AI_Core] Attempting Meta-Rule Experimentation (Operator Swap) after failed self-correction...
+2025-08-12 00:56:21,644 - MetaRule_Module - INFO - 
+[MetaRule Experimentation] Attempting to experiment with meta-rule for 'x6+2_sequence'...
+2025-08-12 00:56:21,644 - MetaRule_Module - INFO -   Meta-rule function: apply_operator_swap_meta_rule
+2025-08-12 00:56:21,644 - MetaRule_Module - INFO -   Reset params to default: True
+2025-08-12 00:56:21,645 - MetaRule_Module - INFO -   Original formula for 'x6+2_sequence': ('odd_num', '*', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,645 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,645 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,645 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,646 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,646 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,646 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,646 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,647 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,647 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,647 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,648 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,648 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,649 - x6+2_Module - INFO - Detected Shared Output: 8.0
+2025-08-12 00:56:21,650 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,650 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,651 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,651 - MetaRule_Module - INFO -   Original Overall Loss: 40.0
+2025-08-12 00:56:21,652 - MetaRule_Module - DEBUG -   Applied operator swap: ('odd_num', '*', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_A') -> ('odd_num', '+', 'BASE_FACTOR_B', '*', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,652 - MetaRule_Module - INFO -   Hypothetical new formula: ('odd_num', '+', 'BASE_FACTOR_B', '*', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,652 - MetaRule_Module - INFO -   Resetting parameters to ideal defaults for testing new rule.
+2025-08-12 00:56:21,653 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,653 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,653 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,654 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,654 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,655 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,655 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,655 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,655 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,656 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,656 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,656 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,656 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,656 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,657 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,657 - MetaRule_Module - INFO -   Overall Loss with hypothetical new formula: 90.0
+2025-08-12 00:56:21,657 - MetaRule_Module - INFO -   Hypothetical new formula did not show significant improvement or increased loss.
+2025-08-12 00:56:21,658 - MetaRule_Module - INFO -   Restored original formula and parameters.
+2025-08-12 00:56:21,658 - MetaRule_Module - INFO - [MetaRule Experimentation] Experiment completed. Rule not adopted in this instance.
+2025-08-12 00:56:21,658 - AI_Core - WARNING - [AI_Core] Meta-Rule Experimentation (Operator Swap) FAILED: Rule not adopted. System remains with original rule.
+2025-08-12 00:56:21,659 - AI_Core - INFO - 
+[Inventor Module] Meta-Rule Experimentation failed. Attempting Factor-Combination Invention...
+2025-08-12 00:56:21,659 - Inventor_Module - INFO - 
+[Inventor Module] Generating and testing factor combination rules...
+2025-08-12 00:56:21,659 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,660 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,660 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,660 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,660 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,661 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,661 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,661 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,662 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,662 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,662 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,663 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,663 - x6+2_Module - INFO - Detected Shared Output: 8.0
+2025-08-12 00:56:21,663 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,664 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,664 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,664 - Inventor_Module - INFO -   Original Overall Loss: 40.0
+2025-08-12 00:56:21,665 - Inventor_Module - DEBUG -   Testing replacement with parameter: ('BASE_FACTOR_A', '*', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,666 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,666 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,666 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,667 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,668 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,668 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,669 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,669 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,669 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,670 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,670 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,671 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,671 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,672 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,672 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,674 - Inventor_Module - DEBUG -     Loss: 160.0
+2025-08-12 00:56:21,675 - Inventor_Module - DEBUG -   Testing replacement with parameter: ('BASE_FACTOR_B', '*', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,676 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,676 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,677 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,677 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,677 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,678 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,678 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,679 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,679 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,679 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,679 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,679 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,680 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,680 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,680 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,680 - Inventor_Module - DEBUG -     Loss: 7840.0
+2025-08-12 00:56:21,681 - Inventor_Module - DEBUG -   Testing replacement with parameter: ('BASE_FACTOR_C', '*', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,681 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,681 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,682 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,682 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,682 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,682 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,682 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,683 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,683 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,683 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,683 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,683 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,684 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,684 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,684 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,685 - Inventor_Module - DEBUG -     Loss: 16000.0
+2025-08-12 00:56:21,685 - Inventor_Module - DEBUG -   Testing replacement with parameter: ('BASE_FACTOR_D', '*', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,686 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,686 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,686 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,686 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,687 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,687 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,687 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,687 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,688 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,688 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,688 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,688 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,689 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,689 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,689 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,689 - Inventor_Module - DEBUG -     Loss: 1000.0
+2025-08-12 00:56:21,689 - Inventor_Module - DEBUG -   Testing replacement with parameter: ('odd_num', 'BASE_FACTOR_A', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,690 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,690 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,690 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,691 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,691 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,691 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,691 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,692 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,692 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,692 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,693 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,693 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,693 - x6+2_Module - ERROR - Error evaluating x6+2 symbolic formula: invalid syntax (<string>, line 1). Formula: ('odd_num', 'BASE_FACTOR_A', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_A'), Expression: 1 2.0 6.0 + 2.0
+2025-08-12 00:56:21,693 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,693 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,694 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,694 - Inventor_Module - DEBUG -     Loss: 1.0000000200000002e+19
+2025-08-12 00:56:21,694 - Inventor_Module - DEBUG -   Testing replacement with parameter: ('odd_num', 'BASE_FACTOR_B', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,694 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,694 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,695 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,695 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,695 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,695 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,695 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,695 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,696 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,696 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,696 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,696 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,696 - x6+2_Module - ERROR - Error evaluating x6+2 symbolic formula: invalid syntax (<string>, line 1). Formula: ('odd_num', 'BASE_FACTOR_B', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_A'), Expression: 1 6.0 6.0 + 2.0
+2025-08-12 00:56:21,697 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,697 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,697 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,697 - Inventor_Module - DEBUG -     Loss: 1.0000000200000002e+19
+2025-08-12 00:56:21,697 - Inventor_Module - DEBUG -   Testing replacement with parameter: ('odd_num', 'BASE_FACTOR_C', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,698 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,698 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,698 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,699 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,699 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,699 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,699 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,699 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,700 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,700 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,700 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,700 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,701 - x6+2_Module - ERROR - Error evaluating x6+2 symbolic formula: invalid syntax (<string>, line 1). Formula: ('odd_num', 'BASE_FACTOR_C', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_A'), Expression: 1 8.0 6.0 + 2.0
+2025-08-12 00:56:21,701 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,701 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,701 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,702 - Inventor_Module - DEBUG -     Loss: 1.0000000200000002e+19
+2025-08-12 00:56:21,702 - Inventor_Module - DEBUG -   Testing replacement with parameter: ('odd_num', 'BASE_FACTOR_D', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,702 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,702 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,702 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,703 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,703 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,703 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,703 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,703 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,704 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,704 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,704 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,704 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,704 - x6+2_Module - ERROR - Error evaluating x6+2 symbolic formula: invalid syntax (<string>, line 1). Formula: ('odd_num', 'BASE_FACTOR_D', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_A'), Expression: 1 3.0 6.0 + 2.0
+2025-08-12 00:56:21,705 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,705 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,705 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,705 - Inventor_Module - DEBUG -     Loss: 1.0000000200000002e+19
+2025-08-12 00:56:21,705 - Inventor_Module - DEBUG -   Testing replacement with operator: ('odd_num', '+', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,706 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,706 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,706 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,706 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,707 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,707 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,707 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,707 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,707 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,708 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,708 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,708 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,708 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,708 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,709 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,709 - Inventor_Module - DEBUG -     Loss: 10.0
+2025-08-12 00:56:21,709 - AI_Core - INFO - 
+[Self-Correction Module] Initiating sophisticated multi-parameter self-correction process...
+2025-08-12 00:56:21,709 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,709 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,710 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,710 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,710 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,710 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,710 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,710 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,711 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,711 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,711 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,711 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,712 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,712 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,712 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,712 - AI_Core - INFO -   [Self-Correction] Attempt 1: A=2.0, B=6.0, C=8.0, D=3.0 | Overall Loss: 10.0
+2025-08-12 00:56:21,713 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,713 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,713 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,713 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,713 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,714 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,714 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,715 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,715 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,716 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,716 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,716 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,717 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,717 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,717 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,717 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,717 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,718 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,718 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,718 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,718 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,718 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,719 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,719 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,719 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,719 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,719 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,720 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,720 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,720 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,720 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,721 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,721 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,721 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,721 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,721 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,722 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,722 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,722 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,722 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,722 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,723 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,723 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,723 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,723 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,724 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,724 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,724 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,724 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,724 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,725 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,725 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,725 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,725 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,725 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,726 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,726 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,726 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,726 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,726 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,727 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.5, D=3.0
+2025-08-12 00:56:21,727 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,727 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.5, D=3.0
+2025-08-12 00:56:21,727 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,727 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.5, D=3.0
+2025-08-12 00:56:21,728 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,728 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.5, D=3.0
+2025-08-12 00:56:21,728 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,728 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.5, D=3.0
+2025-08-12 00:56:21,728 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,729 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.5, D=3.0
+2025-08-12 00:56:21,729 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,729 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.5, D=3.0
+2025-08-12 00:56:21,729 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,729 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,730 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=7.5, D=3.0
+2025-08-12 00:56:21,731 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,731 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=7.5, D=3.0
+2025-08-12 00:56:21,731 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,732 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=7.5, D=3.0
+2025-08-12 00:56:21,732 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,732 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=7.5, D=3.0
+2025-08-12 00:56:21,733 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,733 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=7.5, D=3.0
+2025-08-12 00:56:21,733 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,733 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=7.5, D=3.0
+2025-08-12 00:56:21,734 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,734 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=7.5, D=3.0
+2025-08-12 00:56:21,734 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,734 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,735 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.5
+2025-08-12 00:56:21,735 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 1) - 1 = 1
+2025-08-12 00:56:21,735 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.5
+2025-08-12 00:56:21,736 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 2) - 2 = -1
+2025-08-12 00:56:21,736 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.5
+2025-08-12 00:56:21,736 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 3) - 3 = -7/3
+2025-08-12 00:56:21,736 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.5
+2025-08-12 00:56:21,737 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 4) - 4 = -7/2
+2025-08-12 00:56:21,737 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.5
+2025-08-12 00:56:21,737 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 5) - 5 = -23/5
+2025-08-12 00:56:21,737 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.5
+2025-08-12 00:56:21,737 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (4 * 6) - 6 = -17/3
+2025-08-12 00:56:21,738 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.5
+2025-08-12 00:56:21,738 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 4 * 1 + 1 = 33
+2025-08-12 00:56:21,738 - AI_Core - DEBUG -   25k: Final result 33
+2025-08-12 00:56:21,738 - AI_Core - WARNING - Harmony Score: 25k Goal Mismatch! Calculated: 33, Expected: 25. Applying high penalty.
+2025-08-12 00:56:21,738 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=2.5
+2025-08-12 00:56:21,739 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 1) - 1 = 3
+2025-08-12 00:56:21,739 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=2.5
+2025-08-12 00:56:21,739 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 2) - 2 = 0
+2025-08-12 00:56:21,739 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=2.5
+2025-08-12 00:56:21,739 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 3) - 3 = -5/3
+2025-08-12 00:56:21,740 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=2.5
+2025-08-12 00:56:21,740 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 4) - 4 = -3
+2025-08-12 00:56:21,740 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=2.5
+2025-08-12 00:56:21,741 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 5) - 5 = -21/5
+2025-08-12 00:56:21,741 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=2.5
+2025-08-12 00:56:21,741 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (2 * 6) - 6 = -16/3
+2025-08-12 00:56:21,741 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=2.5
+2025-08-12 00:56:21,742 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 2 * 1 + 1 = 17
+2025-08-12 00:56:21,742 - AI_Core - DEBUG -   25k: Final result 17
+2025-08-12 00:56:21,742 - AI_Core - WARNING - Harmony Score: 25k Goal Mismatch! Calculated: 17, Expected: 25. Applying high penalty.
+2025-08-12 00:56:21,742 - AI_Core - INFO -     Tested Nudges: BASE_FACTOR_A+: 793250.000, BASE_FACTOR_A-: 793290.000, BASE_FACTOR_B+: 1250.000, BASE_FACTOR_B-: 1290.000, BASE_FACTOR_C+: 260.000, BASE_FACTOR_C-: 260.000, BASE_FACTOR_D+: 5076.284, BASE_FACTOR_D-: 5275.136
+2025-08-12 00:56:21,743 - AI_Core - WARNING - [Self-Correction Module] Stuck! No immediate improvement found with current learning_rate. Overall Loss: 10.0
+2025-08-12 00:56:21,743 - Inventor_Module - INFO -   Found potential better formula: ('odd_num', '+', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_A') with loss 10.0 and params {'BASE_FACTOR_A': 2.0, 'BASE_FACTOR_B': 6.0, 'BASE_FACTOR_C': 8.0, 'BASE_FACTOR_D': 3.0}
+2025-08-12 00:56:21,743 - Inventor_Module - DEBUG -   Testing replacement with operator: ('odd_num', '-', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,744 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,744 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,744 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,744 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,745 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,745 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,745 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,746 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,746 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,747 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,747 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,747 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,747 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,748 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,748 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,748 - Inventor_Module - DEBUG -     Loss: 1690.0
+2025-08-12 00:56:21,748 - Inventor_Module - DEBUG -   Testing replacement with operator: ('odd_num', '*', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,749 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,749 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,749 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,750 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,750 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,750 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,750 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,751 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,751 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,752 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,752 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,752 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,752 - x6+2_Module - INFO - Detected Shared Output: 8.0
+2025-08-12 00:56:21,752 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,753 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,753 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,753 - Inventor_Module - DEBUG -     Loss: 40.0
+2025-08-12 00:56:21,753 - Inventor_Module - DEBUG -   Testing replacement with operator: ('odd_num', '/', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,753 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,754 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,754 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,754 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,754 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,754 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,755 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,755 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,755 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,755 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,756 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,756 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,756 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,756 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,756 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,757 - Inventor_Module - DEBUG -     Loss: 640.0
+2025-08-12 00:56:21,757 - Inventor_Module - DEBUG -   Testing replacement with parameter: ('odd_num', '*', 'BASE_FACTOR_A', '+', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,757 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,757 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,757 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,757 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,758 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,758 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,758 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,758 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,758 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,759 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,759 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,759 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,760 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,760 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,760 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,760 - Inventor_Module - DEBUG -     Loss: 360.0
+2025-08-12 00:56:21,760 - Inventor_Module - DEBUG -   Testing replacement with parameter: ('odd_num', '*', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,761 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,761 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,761 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,762 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,762 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,762 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,762 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,762 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,763 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,763 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,763 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,763 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,763 - x6+2_Module - INFO - Detected Shared Output: 8.0
+2025-08-12 00:56:21,764 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,764 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,765 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,765 - Inventor_Module - DEBUG -     Loss: 40.0
+2025-08-12 00:56:21,765 - Inventor_Module - DEBUG -   Testing replacement with parameter: ('odd_num', '*', 'BASE_FACTOR_C', '+', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,766 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,766 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,767 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,767 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,767 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,767 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,768 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,768 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,768 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,768 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,769 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,769 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,769 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,769 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,769 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,770 - Inventor_Module - DEBUG -     Loss: 0.0
+2025-08-12 00:56:21,770 - AI_Core - INFO - 
+[Self-Correction Module] Initiating sophisticated multi-parameter self-correction process...
+2025-08-12 00:56:21,770 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,770 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,770 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,771 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,771 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,771 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,771 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,771 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,772 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,772 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,772 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,772 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,772 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,773 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,773 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,773 - AI_Core - INFO -   [Self-Correction] Attempt 1: A=2.0, B=6.0, C=8.0, D=3.0 | Overall Loss: 0.0
+2025-08-12 00:56:21,773 - AI_Core - INFO - [Self-Correction Module] Self-correction successful! Overall Loss is 0.0 (near 0).
+2025-08-12 00:56:21,774 - Inventor_Module - INFO -   Found potential better formula: ('odd_num', '*', 'BASE_FACTOR_C', '+', 'BASE_FACTOR_A') with loss 0.0 and params {'BASE_FACTOR_A': 2.0, 'BASE_FACTOR_B': 6.0, 'BASE_FACTOR_C': 8.0, 'BASE_FACTOR_D': 3.0}
+2025-08-12 00:56:21,774 - Inventor_Module - DEBUG -   Testing replacement with parameter: ('odd_num', '*', 'BASE_FACTOR_D', '+', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,774 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,775 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,775 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,775 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,775 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,776 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,776 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,776 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,777 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,777 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,777 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,778 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,778 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,778 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,778 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,779 - Inventor_Module - DEBUG -     Loss: 250.0
+2025-08-12 00:56:21,779 - Inventor_Module - DEBUG -   Testing replacement with parameter: ('odd_num', '*', 'BASE_FACTOR_B', 'BASE_FACTOR_A', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,779 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,779 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,779 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,779 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,780 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,780 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,780 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,780 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,780 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,781 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,781 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,781 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,781 - x6+2_Module - ERROR - Error evaluating x6+2 symbolic formula: invalid syntax (<string>, line 1). Formula: ('odd_num', '*', 'BASE_FACTOR_B', 'BASE_FACTOR_A', 'BASE_FACTOR_A'), Expression: 1 * 6.0 2.0 2.0
+2025-08-12 00:56:21,781 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,782 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,782 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,782 - Inventor_Module - DEBUG -     Loss: 1.0000000200000002e+19
+2025-08-12 00:56:21,783 - Inventor_Module - DEBUG -   Testing replacement with parameter: ('odd_num', '*', 'BASE_FACTOR_B', 'BASE_FACTOR_B', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,783 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,783 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,783 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,784 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,784 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,784 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,784 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,785 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,785 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,785 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,785 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,786 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,786 - x6+2_Module - ERROR - Error evaluating x6+2 symbolic formula: invalid syntax (<string>, line 1). Formula: ('odd_num', '*', 'BASE_FACTOR_B', 'BASE_FACTOR_B', 'BASE_FACTOR_A'), Expression: 1 * 6.0 6.0 2.0
+2025-08-12 00:56:21,786 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,787 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,787 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,787 - Inventor_Module - DEBUG -     Loss: 1.0000000200000002e+19
+2025-08-12 00:56:21,787 - Inventor_Module - DEBUG -   Testing replacement with parameter: ('odd_num', '*', 'BASE_FACTOR_B', 'BASE_FACTOR_C', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,787 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,788 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,788 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,788 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,788 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,788 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,789 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,789 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,789 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,789 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,790 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,790 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,790 - x6+2_Module - ERROR - Error evaluating x6+2 symbolic formula: invalid syntax (<string>, line 1). Formula: ('odd_num', '*', 'BASE_FACTOR_B', 'BASE_FACTOR_C', 'BASE_FACTOR_A'), Expression: 1 * 6.0 8.0 2.0
+2025-08-12 00:56:21,790 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,790 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,791 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,791 - Inventor_Module - DEBUG -     Loss: 1.0000000200000002e+19
+2025-08-12 00:56:21,791 - Inventor_Module - DEBUG -   Testing replacement with parameter: ('odd_num', '*', 'BASE_FACTOR_B', 'BASE_FACTOR_D', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,791 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,792 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,792 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,792 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,792 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,792 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,793 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,793 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,793 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,793 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,793 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,793 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,794 - x6+2_Module - ERROR - Error evaluating x6+2 symbolic formula: invalid syntax (<string>, line 1). Formula: ('odd_num', '*', 'BASE_FACTOR_B', 'BASE_FACTOR_D', 'BASE_FACTOR_A'), Expression: 1 * 6.0 3.0 2.0
+2025-08-12 00:56:21,794 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,794 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,794 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,795 - Inventor_Module - DEBUG -     Loss: 1.0000000200000002e+19
+2025-08-12 00:56:21,795 - Inventor_Module - DEBUG -   Testing replacement with operator: ('odd_num', '*', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,795 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,795 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,796 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,796 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,796 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,796 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,796 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,797 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,797 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,797 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,798 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,798 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,798 - x6+2_Module - INFO - Detected Shared Output: 8.0
+2025-08-12 00:56:21,798 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,798 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,799 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,799 - Inventor_Module - DEBUG -     Loss: 40.0
+2025-08-12 00:56:21,799 - Inventor_Module - DEBUG -   Testing replacement with operator: ('odd_num', '*', 'BASE_FACTOR_B', '-', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,799 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,800 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,800 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,800 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,801 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,801 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,801 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,801 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,801 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,802 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,802 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,802 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,803 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,803 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,803 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,804 - Inventor_Module - DEBUG -     Loss: 360.0
+2025-08-12 00:56:21,804 - Inventor_Module - DEBUG -   Testing replacement with operator: ('odd_num', '*', 'BASE_FACTOR_B', '*', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,804 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,805 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,805 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,805 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,805 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,806 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,806 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,806 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,806 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,807 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,807 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,807 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,808 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,808 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,808 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,808 - Inventor_Module - DEBUG -     Loss: 40.0
+2025-08-12 00:56:21,808 - Inventor_Module - DEBUG -   Testing replacement with operator: ('odd_num', '*', 'BASE_FACTOR_B', '/', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,808 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,809 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,809 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,809 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,809 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,809 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,810 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,810 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,810 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,810 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,810 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,811 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,811 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,811 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,811 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,811 - Inventor_Module - DEBUG -     Loss: 490.0
+2025-08-12 00:56:21,812 - Inventor_Module - DEBUG -   Testing replacement with parameter: ('odd_num', '*', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_A')
+2025-08-12 00:56:21,812 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,812 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,812 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,812 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,812 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,813 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,813 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,813 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,813 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,813 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,814 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,814 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,814 - x6+2_Module - INFO - Detected Shared Output: 8.0
+2025-08-12 00:56:21,814 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,814 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,814 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,815 - Inventor_Module - DEBUG -     Loss: 40.0
+2025-08-12 00:56:21,815 - Inventor_Module - DEBUG -   Testing replacement with parameter: ('odd_num', '*', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_B')
+2025-08-12 00:56:21,815 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,815 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,815 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,816 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,816 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,816 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,816 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,816 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,816 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,817 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,817 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,817 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,817 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,818 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,818 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,819 - Inventor_Module - DEBUG -     Loss: 40.0
+2025-08-12 00:56:21,819 - Inventor_Module - DEBUG -   Testing replacement with parameter: ('odd_num', '*', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_C')
+2025-08-12 00:56:21,819 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,819 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,820 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,820 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,820 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,820 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,821 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,821 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,821 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,821 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,821 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,822 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,822 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,822 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,822 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,822 - Inventor_Module - DEBUG -     Loss: 160.0
+2025-08-12 00:56:21,823 - Inventor_Module - DEBUG -   Testing replacement with parameter: ('odd_num', '*', 'BASE_FACTOR_B', '+', 'BASE_FACTOR_D')
+2025-08-12 00:56:21,823 - AI_Core - DEBUG - calculate_decimal_series_term(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,823 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 1) - 1 = 5/3
+2025-08-12 00:56:21,823 - AI_Core - DEBUG - calculate_decimal_series_term(k=2) called with C=8.0, D=3.0
+2025-08-12 00:56:21,823 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 2) - 2 = -2/3
+2025-08-12 00:56:21,823 - AI_Core - DEBUG - calculate_decimal_series_term(k=3) called with C=8.0, D=3.0
+2025-08-12 00:56:21,824 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 3) - 3 = -19/9
+2025-08-12 00:56:21,824 - AI_Core - DEBUG - calculate_decimal_series_term(k=4) called with C=8.0, D=3.0
+2025-08-12 00:56:21,824 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 4) - 4 = -10/3
+2025-08-12 00:56:21,824 - AI_Core - DEBUG - calculate_decimal_series_term(k=5) called with C=8.0, D=3.0
+2025-08-12 00:56:21,824 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 5) - 5 = -67/15
+2025-08-12 00:56:21,825 - AI_Core - DEBUG - calculate_decimal_series_term(k=6) called with C=8.0, D=3.0
+2025-08-12 00:56:21,825 - AI_Core - DEBUG -   Decimal Series: Result C/(D*k) - k: 8 / (3 * 6) - 6 = -50/9
+2025-08-12 00:56:21,825 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
+2025-08-12 00:56:21,825 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
+2025-08-12 00:56:21,825 - AI_Core - DEBUG -   25k: Final result 25
+2025-08-12 00:56:21,825 - Inventor_Module - DEBUG -     Loss: 10.0
+2025-08-12 00:56:21,826 - Inventor_Module - INFO - [Inventor Module] Invention SUCCESS! Adopting new formula: ('odd_num', '*', 'BASE_FACTOR_C', '+', 'BASE_FACTOR_A') with loss 0.0
+2025-08-12 00:56:21,826 - Inventor_Module - INFO -   Adopted parameters found during self-correction for the new formula.
+2025-08-12 00:56:21,826 - AI_Core - INFO - [AI_Core] Novel Rule Invention (Factor-Combination) SUCCESS: New rule adopted! System has evolved structurally.
+2025-08-12 00:56:21,826 - AI_Core - INFO - Script execution complete. Full log saved to /content/drive/MyDrive/veritas_core_full_log.txt
+2025-08-12 00:56:21,827 - AI_Core - INFO - 
+Final state of shared_data_register after full sequence run with self-correction attempt: {'current_x8_term': 136.0, 'current_x6_plus_2_term': 9.0, 'last_shared_output_value': 8.0, 'last_shared_output_source': 'x6_plus_2_sequence', 'validation_flag': True, 'errors_detected': [], 'validation_context_k_index': 1, 'goal_for_x6_plus_2_first_term': 10.0, 'x6_plus_2_recent_terms_history': [5.0, -1000000000, -1000000000, -1000000000, -1000000000, 8.0, 4.0, 12.0, 3.0, 8.0, 12.0, 14.0, 9.0]}
+2025-08-12 00:56:21,827 - AI_Core - INFO - Final AI Core Parameters after self-correction attempt: {'BASE_FACTOR_A': 2.0, 'BASE_FACTOR_B': 6.0, 'BASE_FACTOR_C': 8.0, 'BASE_FACTOR_D': 3.0}
+2025-08-12 00:56:21,827 - AI_Core - INFO - Final Veritas Core Formulas (symbolic): {'x6+2_sequence': ('odd_num', '*', 'BASE_FACTOR_C', '+', 'BASE_FACTOR_A')}
