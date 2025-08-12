@@ -1,13 +1,13 @@
 # Veritas-Core-AI-Sim
 My first Python AI project
-- optimizes parameters for a math sequence.
+- Optimizes parameters for a math sequence.
 - Built in Colab as a beginner.
 - Achieved zero loss, with x6+2 first term = 10.0
 - Run with 'python veritas_core.py'.
 - Feedback welcome!
 #CodingNewbie
--
--
+---------------------------------------------------------------------------------------------------
+- NOTE: Veritas-Core-AI-Sim_full_log.txt file: key results found at bottom of log (portion seen below for convenience)
 ---------------------------------------------------------------------------------------------------
 - 2025-08-11 15:22:07,185 - AI_Core - DEBUG - calculate_25k_target(k=1) called with C=8.0, D=3.0
 - 2025-08-11 15:22:07,185 - AI_Core - DEBUG -   25k: Intermediate result (C*D*k)+k: 8 * 3 * 1 + 1 = 25
